@@ -268,7 +268,7 @@ export default {
       const exit = this.openHandler({
         locale: this.currentLocale,
         path: this.currentPath,
-        id: (this.mustExist && this.currentPage) ? this.currentPage.pageId : 0
+        id: this.currentPage ? this.currentPage.pageId : 0
       })
       if (exit !== false) {
         this.close()
